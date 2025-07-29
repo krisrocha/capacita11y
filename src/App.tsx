@@ -24,5 +24,5 @@ function App() {
     </AccessibilityProvider>
   );
 }
-
+// Comentario de prueba para commit de evidencia
 export default App;
