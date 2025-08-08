@@ -6,6 +6,7 @@ import Footer from './components/layout/Footer';
 import HomePage from './pages/HomePage';
 import Courses from './pages/Courses';
 
+
 function App() {
   return (
     <AccessibilityProvider>
