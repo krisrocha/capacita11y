@@ -4,6 +4,7 @@ import { AccessibilityProvider } from './context/AccessibilityContext';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import HomePage from './pages/HomePage';
+import Courses from './pages/Courses';
 
 function App() {
   return (
@@ -14,8 +15,15 @@ function App() {
           <div className="flex-grow">
             <Routes>
               <Route path="/" element={<HomePage />} />
-              {/* Other routes will be added as components are developed */}
-              <Route path="*" element={<div className="container-tight py-20 text-center"><h1>Page Not Found</h1></div>} />
+              <Route path="/cursos" element={<Courses/>} />
+              {/* Futuras rutas */}
+              {/* <Route path="/cursos" element={<Courses />} />
+              <Route path="/acerca" element={<About />} />
+              <Route path="/contacto" element={<Contact />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/registro" element={<Registro />} /> */}
+              {/* Ruta por defecto si no se encuentra otra */}
+              <Route path="*" element={<div className="container-tight py-20 text-center"><h1>Página no encontrada</h1></div>} />
             </Routes>
           </div>
           <Footer />

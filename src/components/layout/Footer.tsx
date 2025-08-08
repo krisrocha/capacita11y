@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-primary-700 dark:border-primary-800 mt-12 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-primary-100 dark:text-primary-200 text-sm">
-              &copy; {new Date().getFullYear()} Adaptive Learning Platform. All rights reserved.
+              &copy; {new Date().getFullYear()} CapacitA11y. Todos los derechos reservados
             </p>
             <div className="mt-4 md:mt-0 flex items-center">
               <span className="text-primary-100 dark:text-primary-200 text-sm flex items-center">
