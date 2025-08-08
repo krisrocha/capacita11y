@@ -48,10 +48,10 @@ const Header: React.FC<HeaderProps> = ({
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            <Link to="/" className="nav-link">Home</Link>
-            <Link to="/courses" className="nav-link">Courses</Link>
-            <Link to="/resources" className="nav-link">Resources</Link>
-            <Link to="/support" className="nav-link">Support</Link>
+            <Link to="/" className="nav-link">Inicio</Link>
+            <Link to="/acerca" className="nav-link">Acerca de</Link>
+            <Link to="/cursos" className="nav-link">Cursos</Link>
+            <Link to="/contacto" className="nav-link">Contácto</Link>
           </nav>
 
           {/* Action buttons */}
@@ -86,10 +86,10 @@ const Header: React.FC<HeaderProps> = ({
             ) : (
               <div className="flex space-x-2">
                 <Link to="/login" className="btn btn-outline btn-sm">
-                  Sign In
+                  Login
                 </Link>
-                <Link to="/register" className="btn btn-primary btn-sm hidden sm:inline-flex">
-                  Register
+                <Link to="/registro" className="btn btn-primary btn-sm hidden sm:inline-flex">
+                  Registro
                 </Link>
               </div>
             )}
