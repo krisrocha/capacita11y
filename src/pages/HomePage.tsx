@@ -127,7 +127,7 @@ const HomePage: React.FC = () => {
 
 <div
   className="h-10 w-10 rounded-full bg-center bg-cover mt-1"
-  style={{ backgroundImage: "url('/images/testimonio1.png" }} 
+  style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/testimonio1.png)` }} 
 />
 
 
@@ -150,7 +150,7 @@ const HomePage: React.FC = () => {
 
 <div
   className="h-10 w-10 rounded-full bg-center bg-cover mt-1"
-  style={{ backgroundImage: "url('/images/testimonio2.png" }}
+  style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/testimonio2.png)` }}
 />
 
 
@@ -173,7 +173,7 @@ const HomePage: React.FC = () => {
 
 <div
   className="h-10 w-10 rounded-full bg-center bg-cover mt-1"
-  style={{ backgroundImage: "url('/images/testimonio3.png" }}
+  style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/testimonio3.png)` }}
 />
 
 

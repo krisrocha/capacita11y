@@ -1,0 +1,44 @@
+[
+{
+    "id": 1,
+    "titulo": "Introducción a la Accesibilidad Web",
+    "descripcion": "Conoce los principios fundamentales de accesibilidad digital según WCAG 2.1.",
+    "imagen": "portada_curso_1.png",
+    "categoria": "Accesibilidad"
+},
+{
+    "id": 2,
+    "titulo": "HTML Semántico y Buenas Prácticas",
+    "descripcion": "Aprende a estructurar páginas accesibles con HTML semántico.",
+    "imagen": "portada_curso_2.png",
+    "categoria": "Desarrollo Web"
+},
+{
+    "id": 3,
+    "titulo": "React desde Cero",
+    "descripcion": "Inicia en el desarrollo de interfaces dinámicas con React.",
+    "imagen": "portada_curso_3.png",
+    "categoria": "Programación"
+},
+{
+    "id": 4,
+    "titulo": "Diseño Inclusivo",
+    "descripcion": "Aplica principios de diseño centrado en el usuario para crear interfaces inclusivas.",
+    "imagen": "portada_curso_4.png",
+    "categoria": "Diseño UX"
+},
+{
+    "id": 5,
+    "titulo": "Diseño Inclusivo",
+    "descripcion": "Aplica principios de diseño centrado en el usuario para crear interfaces inclusivas.",
+    "imagen": "portada_curso_5.png",
+    "categoria": "Diseño UX"
+},
+{
+    "id": 6,
+    "titulo": "Historia del Arte",
+    "descripcion": "Utiliza herramientas automáticas para medir el cumplimiento de criterios WCAG.",
+    "imagen": "portada_curso_6.png",
+    "categoria": "Accesibilidad"
+}
+]

@@ -16,7 +16,7 @@ const [busqueda, setBusqueda] = useState('');
 const [categoriasSeleccionadas, setCategoriasSeleccionadas] = useState<string[]>([]);
 
 useEffect(() => {
-fetch('/src/data/cursos.json')
+fetch(`${import.meta.env.BASE_URL}data/cursos.json`)
     .then((response) => response.json())
     .then((data) => setCursos(data))
     .catch((error) => console.error('Error al cargar los cursos:', error));
