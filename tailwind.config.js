@@ -5,6 +5,24 @@ export default {
   theme: {
     extend: {
       colors: {
+        blue:{
+          50: '#F0F9FF',
+          100: '#E0F2FE',
+          800: '#026A9E',
+        },
+        elementos:{
+          1: '#DCFCE7',
+          10: '#166534',
+          2: '#DBEAFE',
+          20: '#1E40AF',
+          3: '#F3E8FF',
+          30: '#6B21A8',
+          4: '#111827',
+          5: '#8e8e8e',
+        },
+        simple:{
+          50: '#FFFFFF',
+        },
         primary: {
           50: '#F0F4F8',
           100: '#D9E2EC',

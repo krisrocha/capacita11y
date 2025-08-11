@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface Curso {
 id: number;
@@ -6,6 +6,7 @@ titulo: string;
 descripcion: string;
 duracion: string;
 nivel: string;
+imagen: string;
 categoria: string;
 }
 
@@ -42,8 +43,8 @@ return (
     {/* Sidebar de Categorías */}
     <aside className="w-full md:w-1/4">
     <h2 className="text-xl font-semibold mb-4">Categorías</h2>
-    <ul className="space-y-2">
-        {['Discapacidad', 'Educación', 'Necesidades Especiales', 'Tecnología', 'Artes y Humanidades'].map((categoria) => (
+    <ul className="space-y-2 dark:text-white">
+        {['Accesibilidad', 'Educación', 'Necesidades Especiales', 'Tecnología', 'Artes y Humanidades'].map((categoria) => (
         <li key={categoria}>
             <label className="inline-flex items-center">
             <input
@@ -60,9 +61,13 @@ return (
     </aside>
 
     {/* Contenido principal */}
-    <main className="w-full md:w-3/4">
+    <main className="w-full md:w-3/4" id="main">
     <div className="mb-6">
+        <label htmlFor="busqueda" className="mb-1 block text-sm text-slate-700 dark:text-white">
+                Buscar cursos
+            </label>
         <input
+        id="busqueda"
         type="text"
         placeholder="Buscar cursos"
         value={busqueda}
@@ -75,8 +80,8 @@ return (
         {cursosFiltrados.map((curso) => (
         <div key={curso.id} className="border rounded-lg overflow-hidden shadow">
             <img
-            src="https://via.placeholder.com/400x200"
-            alt="Imagen del curso"
+            src={`${import.meta.env.BASE_URL}images/${curso.imagen}`}
+            alt=""
             className="w-full h-48 object-cover"
             />
             <div className="p-4">

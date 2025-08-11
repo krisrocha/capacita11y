@@ -24,7 +24,7 @@ const AccessibilityPanel: React.FC<AccessibilityPanelProps> = ({ onClose }) => {
     <div className="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 shadow-md animate-slide-up">
       <div className="container-tight py-4">
         <div className="flex justify-between items-center mb-4">
-          <h2 id="accessibility-panel-title" className="text-xl font-semibold text-gray-900 dark:text-gray-100">Accessibility Settings</h2>
+          <h2 id="accessibility-panel-title" className="text-xl font-semibold text-gray-900 dark:text-gray-100">Configuraciones de accesibilidad</h2>
           <button 
             onClick={onClose}
             className="p-2 rounded-md text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500"
@@ -39,7 +39,7 @@ const AccessibilityPanel: React.FC<AccessibilityPanelProps> = ({ onClose }) => {
             <div>
               <div className="flex items-center mb-2">
                 <Type className="h-5 w-5 text-primary-500 dark:text-primary-400 mr-2" />
-                <label htmlFor="textSize" className="form-label">Text Size</label>
+                <label htmlFor="textSize" className="form-label">Tamaño de Texto</label>
               </div>
               <select
                 id="textSize"
@@ -50,11 +50,11 @@ const AccessibilityPanel: React.FC<AccessibilityPanelProps> = ({ onClose }) => {
                 aria-describedby="text-size-description"
               >
                 <option value="normal">Normal</option>
-                <option value="large">Large</option>
-                <option value="larger">Larger</option>
+                <option value="large">Grande</option>
+                <option value="larger">Más Grande</option>
               </select>
               <p id="text-size-description" className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                Adjust the size of text throughout the platform
+                Ajustar tamaño de texto.
               </p>
             </div>
 
@@ -70,10 +70,10 @@ const AccessibilityPanel: React.FC<AccessibilityPanelProps> = ({ onClose }) => {
               <div className="ml-3">
                 <label htmlFor="highContrast" className="form-label flex items-center">
                   <Contrast className="h-5 w-5 text-primary-500 dark:text-primary-400 mr-2" />
-                  High Contrast
+                  Alto Contraste
                 </label>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Enhance visual distinction between elements
+                  Sin distracciones entre elementos.
                 </p>
               </div>
             </div>
@@ -90,10 +90,10 @@ const AccessibilityPanel: React.FC<AccessibilityPanelProps> = ({ onClose }) => {
               <div className="ml-3">
                 <label htmlFor="reduceMotion" className="form-label flex items-center">
                   <MonitorPlay className="h-5 w-5 text-primary-500 dark:text-primary-400 mr-2" />
-                  Reduce Motion
+                  Reducir el Movimiento
                 </label>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Minimize animations and transitions
+                  Minimizar animaciones y transiciones.
                 </p>
               </div>
             </div>
@@ -110,10 +110,10 @@ const AccessibilityPanel: React.FC<AccessibilityPanelProps> = ({ onClose }) => {
               <div className="ml-3">
                 <label htmlFor="darkModeToggle" className="form-label flex items-center">
                   {darkMode ? <Moon className="h-5 w-5 text-primary-500 dark:text-primary-400 mr-2" /> : <Sun className="h-5 w-5 text-primary-500 dark:text-primary-400 mr-2" />}
-                  Dark Mode
+                  Modo obscuro
                 </label>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Switch between light and dark themes
+                  Elige entre temas claro u obscuro.
                 </p>
               </div>
             </div>
@@ -132,10 +132,10 @@ const AccessibilityPanel: React.FC<AccessibilityPanelProps> = ({ onClose }) => {
               <div className="ml-3">
                 <label htmlFor="screenReader" className="form-label flex items-center">
                   <Volume2 className="h-5 w-5 text-primary-500 dark:text-primary-400 mr-2" />
-                  Screen Reader Optimization
+                  Lector de pantalla
                 </label>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Enhance compatibility with screen readers
+                  Compatible con lectores de pantalla.
                 </p>
               </div>
             </div>
@@ -152,10 +152,10 @@ const AccessibilityPanel: React.FC<AccessibilityPanelProps> = ({ onClose }) => {
               <div className="ml-3">
                 <label htmlFor="captionsEnabled" className="form-label flex items-center">
                   <MonitorPlay className="h-5 w-5 text-primary-500 dark:text-primary-400 mr-2" />
-                  Enable Captions
+                  Habilitar subtitulos
                 </label>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Show captions for video and audio content
+                  Mostrar subtitulos de videos y contenido de audio
                 </p>
               </div>
             </div>
@@ -172,10 +172,10 @@ const AccessibilityPanel: React.FC<AccessibilityPanelProps> = ({ onClose }) => {
               <div className="ml-3">
                 <label htmlFor="keyboardNavigation" className="form-label flex items-center">
                   <Keyboard className="h-5 w-5 text-primary-500 dark:text-primary-400 mr-2" />
-                  Enhanced Keyboard Navigation
+                  Navegación de teclado mejorada
                 </label>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Improved focus indicators and shortcuts
+                  Indicadores de enfoque y accesos directos mejorados.
                 </p>
               </div>
             </div>
@@ -188,14 +188,14 @@ const AccessibilityPanel: React.FC<AccessibilityPanelProps> = ({ onClose }) => {
             className="btn btn-outline"
             aria-label="Reset all accessibility settings to default"
           >
-            Reset to Default
+            Reset
           </button>
           <button
             onClick={onClose}
-            className="btn btn-primary"
+            className="btn btn-primary dark:text-primary-900"
             aria-label="Save accessibility settings"
           >
-            Save Settings
+            Guardar
           </button>
         </div>
       </div>

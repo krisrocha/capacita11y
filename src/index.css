@@ -19,6 +19,9 @@
   h1 {
     @apply text-3xl md:text-4xl;
   }
+  h1 .subh1{
+    color:#026A9E;
+  }
 
   h2 {
     @apply text-2xl md:text-3xl;
@@ -41,11 +44,12 @@
   }
 
   p {
-    @apply leading-relaxed text-gray-700 dark:text-gray-300;
+    @apply text-gray-700 dark:text-gray-300;
+    line-height:120%;
   }
 
   a {
-    @apply text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-sm transition-colors;
+    @apply font-medium text-blue-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded-sm transition-colors;
   }
 
   button, [type='button'], [type='reset'], [type='submit'] {
@@ -140,7 +144,7 @@
   }
 
   .btn-primary {
-    @apply bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500 dark:bg-primary-600 dark:hover:bg-primary-500;
+    @apply bg-blue-800 text-white hover:bg-primary-700 hover:text-white focus:ring-primary-500 dark:bg-white dark:hover:bg-gray-300;
   }
 
   .btn-secondary {
@@ -156,7 +160,7 @@
   }
 
   .btn-lg {
-    @apply px-6 py-3 text-lg;
+    @apply px-8 py-2 text-sm;
   }
 
   .btn-sm {
